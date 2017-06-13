@@ -11,10 +11,13 @@ class Form extends Component{
 
           <form method='post'>
             <label for='name'>大名: &nbsp;</label>
-            <input type='text' id='name' />
+            <input type='text' id='name' placeholder='周星馳?'/>
             <br />
             <label for='number'>數量: &nbsp;</label>
-            <input type='number' id='number' />
+            <input type='number' id='number' placeholder='多買幾本吧~'/>
+            <br />
+            <label for='note'>備註: &nbsp;</label>
+            <input type='text' id='note' placeholder='額外需求...'/>
             <br /><br />
             <button type='button' className='btn btn-primary'>訂購</button>
           </form>

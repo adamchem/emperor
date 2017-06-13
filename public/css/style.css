@@ -73,9 +73,10 @@ body{
 .detail div{
   margin-bottom: 30px;
 }
-.order-side .form{
-  
+.order-side .list h1{
+  margin-left: 30%;
 }
 .order-side .back{
-  margin-left: 50%;
+  margin-top: 50px;
+  margin-left: 40%;
 }
