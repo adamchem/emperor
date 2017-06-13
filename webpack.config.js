@@ -5,6 +5,20 @@ module.exports = {
   entry: [
     './src/index'
   ],
+  output: {
+    path: path.join(__dirname, '/public'),
+    publicPath: '/',
+    filename: 'bundle.js'
+  },
+  devServer: {
+    color: true,
+    historyApiFallback: true,
+    contentBase: './public',
+    inline: true,
+    progress: true,
+    port: 3000,
+    hot: true
+  },
   module: {
     loaders: [{
       test: /\.js?$/,
@@ -17,20 +31,6 @@ module.exports = {
   },
   resolve: {
     extensions: ['', '.js']
-  },
-  output: {
-    path: path.join(__dirname + '/public'),
-    publicPath: '/',
-    filename: 'bundle.js'
-  },
-  devServer: {
-    color: true,
-    historyApiFallback: true,
-    contentBase: './public',
-    inline: true,
-    progress: true,
-    port: 3000,
-    hot: true
   },
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
